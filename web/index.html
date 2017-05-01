@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favoricon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Fire Brick Life</title>
+    <!--Bootstrap css stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet">
+    <!--all the custom css stylesheets-->
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet-index.css">
+    <!--Google sigin-->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="988977465903-4kmoa98jvcbi98ool9runutkohh6u52h.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/plus.js?onload=init"></script>
+    <!-- add jquery lib-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--jQuery and Bootstrap scripts-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js?onload=start" async defer></script>
+    <!--add firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        start();
+        initFirebase();
+    </script>
+</head>
+<body>
+
+<!--super container for the home page-->
+<div class="home-container">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <!--top nav bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#game"><img class="logo" src="./img/logo_final.png">Fire Brick Life</a>
+            <button type="button" class="home-navbar-button">
+                <span class="glyphicon glyphicon-menu-hamburger home-nav-text"></span>
+            </button>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <!-- <li class="empty-li"><a href="#">.</a></li> -->
+            <li class="nonempty-li"><a href="#game">Game</a></li>
+            <li class="nonempty-li"><a href="#introduction">Introduction</a></li>
+            <li class="nonempty-li"><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <a name="game"></a>
+    <div class="section-space"></div>
+
+    <!--game section-->
+    <section class="section-game">
+        <center>
+            <div class="game-super-container">
+                <div class="game-title-container">
+                    <div class="title-logo-div"><img src="./img/logo_final.png"></div>
+                    <div class="title-div">Fire Brick Life</div>
+                </div>
+                <div class="game-description"><span>Fire Brick Life</span> is <div>a game that keeps you enjoy </div>defending against attacks of the<div> Chinese mythology monsters!</div></div>
+                <div class="game-right">
+                    <div class="play-container">
+                        <div class="monster-container"><img src="./img/ppl_FeiLian.png"></div>
+
+                        <div class="button-description-contianer">
+                            <div class="button-description-contianer2">
+                                <div class="button-description1"><span>Play as Guest: </span>Play the game without signing in</div>
+                                <div><span>Sign in with Google: </span>Sign in with Google to save your game progress</div>
+                                <div class="color-grey"></div>
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+
+                            <button id="guestbtn" onclick="guestLogin()">
+                                <span class="glyphicon glyphicon-user">
+                                </span>Play as Guest
+                            </button>
+
+                            <button id="signinButton" type="button" onclick="googleLogin()">
+                                <span class="glyphicon glyphicon-log-in" data-onsuccess="onSignIn">
+                                </span>Sign In with Google
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </center>
+
+    </section>
+
+
+    <a name="introduction"></a>
+    <div class="section-space2"></div>
+    <!--introduction section-->
+    <section class="section-introduction">
+
+        <center>
+            <div class="section-name">Introduction</div>
+            <div class="story">The Chinese mythology monsters come out from the books! They are invading your Desktop. Kill them all before they disappear by building turret to shoot Game of Life particles.</div>
+            <div class="intro-subtitle">Five Boss Characters</div>
+            <ul class="monster-list">
+                <li class="mo ml">
+                    <center>
+                        <img src="./img/ppl_FeiLian.png">
+                        <div>Fei Lian</div></center>
+                </li>
+                <li class="mo mr">
+                    <img src="./img/ppl_HongHaier.png">
+                    <center><div>Red Boy</div></center>
+                </li>
+                <li class="mo ml">
+                    <img src="./img/ppl_CiTie.png">
+                    <center><div>Ci Tie</div></center>
+                </li>
+                <li class="mo mr">
+                    <img src="./img/ppl_HuoDou.png">
+                    <center><div>Huo Dou</div></center>
+                </li>
+                <li class="mo">
+                    <img src="./img/ppl_Qilin.png">
+                    <center><div>Kirin</div></center>
+                </li>
+            </ul>
+
+            <div class="intro-subtitle2">Five Tower Elements</div>
+            <ul class="tower-list">
+                <li class="to tl">
+                    <center>
+                        <img src="./img/eye_tower.png">
+                        <div>Eye Tower</div></center>
+                </li>
+                <li class="to tr">
+                    <img src="./img/fan_tower.png">
+                    <center><div>Fan Tower</div></center>
+                </li>
+                <li class="to tl">
+                    <img src="./img/gear_tower.png">
+                    <center><div>Gear Tower</div></center>
+                </li>
+                <li class="to tr">
+                    <img src="./img/java_tower.png">
+                    <center><div>Java Tower</div></center>
+                </li>
+                <li class="to">
+                    <img src="./img/xueyou_tower.png">
+                    <center><div>Xueyou Tower</div></center>
+                </li>
+            </ul>
+        </center>
+        <div class="section-space"></div>
+        <div class="color-container-black"></div>
+    </section>
+
+
+
+    <a name="contact"></a>
+    <div class="section-space2"></div>
+    <!--contact section-->
+    <section class="section-contact">
+        <center>
+            <div class="section-name">Contact</div>
+            <div class="contact-text">Fire Brick Life was developed by Team Fire Brick Life</div>
+
+            <ul class="member-container">
+                <li class="li2 li4">
+                    <div>Chief Advisor</div>
+                    <div>Richard McKenna</div>
+                </li>
+                <li class="li1 li4">
+                    <div>Lead Programmer</div>
+                    <div>Jun Hao</div>
+                </li>
+                <li class="li2 li4">
+                    <div>Data Designer</div>
+                    <div>Qixiang Chen</div>
+                </li>
+                <li class="li1 li3">
+                    <div>Lead Designer</div>
+                    <div>Haozhi Qu</div>
+                </li>
+                <li class="li2 li3">
+                    <div>Project Manager</div>
+                    <div>Yinquan Hao</div>
+                </li>
+                <li class="li1 li3">
+                    <div>Mobile Developer</div>
+                    <div>Liwen Fan</div>
+                </li>
+            </ul>
+            
+            <div class="contact-text2">Feel free to contact us if you have any questions</div>
+            <div class="fb-share-button" data-href="https://firebrick-life.firebaseapp.com/" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffirebrick-life.firebaseapp.com%2F&amp;src=sdkpreparse">Share</a></div>
+            <div class="fb-send" data-href="https://firebrick-life.firebaseapp.com/"></div>
+            <div class="team-email"><span class="glyphicon glyphicon-envelope"></span>
+                <a href="mailto:firebricklife@gmail.com">firebricklife@gmail.com</a>
+            </div>
+        </center>
+    </section>
+
+</div>
+
+
+
+
+
+<!--footer-->
+<footer>
+    <center>
+        <div class="copyright">© 2016 Fire Brick Life. All rights reserved</div>
+    </center>
+</footer>
+
+
+<!--all the custom scripts-->
+<script src="./scripts/scripts-index.js"></script>
+
+</body>
+</html>

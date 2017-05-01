@@ -1,0 +1,933 @@
+/*******overwrite boostrap for body*******/
+body{
+	line-height:normal;
+}
+*{
+	box-sizing: content-box;
+}
+.btn{
+	outline: none !important;
+}
+.btn:focus{
+	outline: none !important;
+}
+.btn:active{
+	outline: none !important;
+}
+button{
+	outline: none !important;
+}
+button:focus{
+	outline: none !important;
+}
+button:active{
+	outline: none !important;
+}
+.glyphicon{
+	top: 2px;
+}
+/*******overwrite boostrap for body*******/
+
+
+
+/*******all the containers*******/
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+
+	background: url(../img/bg_base.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.home-container{
+	min-height: 100%;
+}
+section{
+	width: 100%;
+}
+.section-space{
+	height: 55px;/*!!!!!!!!!!!!!!!!change it if the height of nav is changed*/
+}
+.section-space2{
+	margin-top: -55px;
+	height: 55px;/*!!!!!!!!!!!!!!!!change it if the height of nav is changed*/
+}
+@media screen and (max-width: 550px){
+.section-space{
+	height: 45px;/*!!!!!!!!!!!!!!!!change it if the height of nav is changed*/
+}
+.section-space2{
+	margin-top: -45px;
+	height: 45px;/*!!!!!!!!!!!!!!!!change it if the height of nav is changed*/
+}
+}
+.section-game{
+	position: relative;
+	height: 270px;
+	padding: 70px 0px 0px 0px;
+}
+@media screen and (min-width: 1200px){
+.section-game{
+	height: 290px;
+	padding: 50px 0px 0px 0px;
+}
+}
+@media screen and (max-width: 900px){
+.section-game{
+	height: 315px;
+	padding: 25px 0px 0px 0px;
+}
+}
+@media screen and (max-width: 550px){
+.section-game{
+	height: 300px;
+	padding: 40px 0px 0px 0px;
+}
+}
+.section-introduction{
+	position: relative;
+	-webkit-box-shadow: inset 0px 7px 7px -7px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 7px 7px -7px rgba(255,255,255,1);
+	box-shadow: inset 0px 7px 7px -7px rgba(255,255,255,1);
+}
+.section-contact{
+	-webkit-box-shadow: inset 0px 7px 7px -7px rgba(38,38,38,1);
+	-moz-box-shadow: inset 0px 7px 7px -7px rgba(38,38,38,1);
+	box-shadow: inset 0px 7px 7px -7px rgba(38,38,38,1);
+	padding: 0px 0px 50px 0px;/*for copyright footer stay in buttom*/
+	/*50+50*/
+}
+footer{
+	width: 100%;
+	height: 50px;/*for copyright footer stay in buttom*/
+	margin-top: -50px;/*for copyright footer stay in buttom*/
+	position: relative;
+}
+.color-container-black{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -1;
+	opacity: 0.7;
+	background: #262626;
+}
+/*.color-container-red{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 300px;
+	z-index: -1;
+	opacity: 0.6;
+	background: #ff3333;
+}*/
+.section-name{
+	/*font*/
+	font-family: 'Signika';/*can use different font later*/
+	font-weight: bold;
+	font-size: 42px;
+	position: relative;
+	padding: 25px 0px 20px 0px;
+}
+@media screen and (max-width: 900px){
+.section-name{
+	font-size: 37px;
+	padding: 25px 0px 20px 0px;
+}
+}
+@media screen and (max-width: 550px){
+.section-name{
+	font-size: 30px;
+	padding: 25px 0px 20px 0px;
+}
+}
+.section-introduction .section-name{
+	color: #e6e6e6;
+}
+/*******all the containers*******/
+
+
+
+
+/*******top navigation bar*******/
+/*entire top nav*/
+.navbar{
+	text-align: center;
+	height: 55px;
+	padding: 0px;
+	margin: 0px;
+	background: #631c1d;
+	border: 0px;
+	-webkit-box-shadow: 0px 2px 14px 2px #631c1d;
+	-moz-box-shadow: 0px 2px 14px 2px #631c1d;
+	box-shadow: 0px 2px 14px 2px #631c1d;
+}
+
+
+/*logo + game name*/
+.logo{
+	height: 48px;
+	width: 48px;
+	float: left;
+	display: inline-block;
+	padding: 3px 8px 0px 0px;
+}
+.navbar-header{
+	position: absolute;
+	left: 20px;
+}
+.navbar-header a{
+	height: 55px;
+	line-height: 55px;
+	padding: 0px;
+	margin: 0px;
+
+	/*font*/
+	font-family: 'Alegreya';/*can use different font later*/
+	font-weight: bold;
+	font-size: 25px;
+}
+.navbar .navbar-header>a{
+	color: white;
+}
+.navbar .navbar-header>a:hover{
+	color: white;
+}
+.navbar .navbar-header>a:focus{
+	color: white;
+}
+
+/*center part of the top nav*/
+.navbar-nav{
+    display: inline-block;
+    float: none;
+    padding: 0px;
+    margin: 0px;
+}
+.home-navbar-button{
+	border-radius: 3px;
+	color: white;
+	line-height: 32px;
+	width: 42px;
+	height: 38px;
+	font-size: 22px;
+	background: #9f2d2f;
+	border: 0px;
+	position: absolute;
+	right: 30px;
+	top: 6px;
+	display: none;
+}
+.home-navbar-button span{
+	position: relative;
+	top: 4px;
+}
+.home-navbar-show{
+	display: inline-block;
+}
+
+/*li and a of the center part of the top nav*/
+.navbar-nav li{
+	height: 55px;
+	padding: 0px;
+	margin: 0px;
+	background: #631c1d;
+}
+.navbar-nav .nonempty-li a{
+    width: 180px;
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 55px;
+    background: #631c1d;
+
+    /*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 18px;
+}
+.navbar .navbar-nav li>a{
+	color: white;
+}
+.navbar .navbar-nav li>a:hover{
+	color: white;
+	background: #9f2d2f;
+	box-shadow: 0px 3px 14px 0px #9f2d2f;
+}
+.navbar .navbar-nav li>a:focus{
+	color: white;
+}
+.navbar .navbar-nav>.active>a{
+	color: white;
+	background: #9f2d2f;
+	box-shadow: 0px 3px 14px 0px #9f2d2f;
+}
+.navbar .navbar-nav>.active>a:hover{
+	color: white;
+	background: #9f2d2f;
+	box-shadow: 0px 3px 14px 0px #9f2d2f;
+}
+.navbar .navbar-nav>.active>a:focus{
+	color: white;
+	background: #9f2d2f;
+	box-shadow: 0px 3px 14px 0px #9f2d2f;
+}
+
+
+/*responsive for top nav*/
+@media screen and (max-width: 1200px){/*767*/
+.navbar-nav{
+	display: none;
+}
+.home-navbar-show{
+	display: inline-block;
+}
+.navbar-header{
+	width: 100%;
+	position: relative;
+}
+.home-navbar-button{
+	display: inline-block;
+}
+.navbar-nav .nonempty-li a{
+    width: 100%;
+}
+.navbar-nav .nonempty-li{
+	width: 100%;
+}
+.navbar-nav{
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 14px 2px #631c1d;
+	-moz-box-shadow: 0px 2px 14px 2px #631c1d;
+	box-shadow: 0px 2px 14px 2px #631c1d;
+}
+}
+@media screen and (max-width: 550px){
+.navbar{
+	height: 45px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+.logo{
+	height: 40px;
+	width: 40px;
+	padding: 2px 7px 0px 0px;
+}
+.navbar-header{
+	left: 7px;
+	top: 3px;
+}
+.navbar-header a{
+	height: 45px;
+	line-height: 45px;
+
+	/*font*/
+	font-size: 21px;
+}
+.home-navbar-button{
+	width: 35px;
+	height: 33px;
+	font-size: 20px;
+	right: 20px;
+	top: 3px;
+}
+.home-navbar-button span{
+	position: relative;
+	top: 2px;
+}
+.navbar-nav{
+	position: relative;
+	top: 6px;
+}
+.navbar-nav li{
+	height: 45px;
+}
+.navbar-nav .nonempty-li a{
+	height: 45px;
+	line-height: 45px;
+
+	/*font*/
+	font-size: 15px;
+}
+
+}
+/*******top navigation bar*******/
+
+
+
+
+
+
+
+
+
+
+
+
+/*******content inside game section*******/
+.game-super-container{
+	position: relative;
+	width: 810px;
+}
+.button-container{
+	position: absolute;
+	top: 90px;
+	right: 50px;
+}
+.button-container button{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	display: block;
+	height: 50px;
+	width: 230px;
+	border-radius: 3px;
+	box-shadow: 3px 3px 19px -2px #cd4c4e;
+	background: #cd4c4e;
+	color: white;
+	margin: 0px 0px 10px 0px;
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 16px;
+}
+.button-container button:hover{
+	background: #B63436;
+	box-shadow: 3px 3px 19px -2px #B63436;
+}
+.button-container .glyphicon{
+	padding: 0px 10px 0px 0px;
+}
+.button-description-contianer{
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	border: 5px solid #d9d9d9;
+	border-radius: 5px;
+	text-align: left;
+	width: 310px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 16px;
+}
+.button-description1{
+	padding: 0px 0px 5px 0px;
+}
+.button-description-contianer2{
+	position: relative;
+}
+.color-grey{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -1;
+	opacity: 0.6;
+	background: #cccccc;
+}
+.button-description-contianer div span{
+	color: #B22222;
+}
+.game-description{
+	position: absolute;
+	top: 10px;
+
+	/*font*/
+	font-family: 'Signika';/*can use different font later*/
+	font-weight: bold;
+	font-size: 34px;
+	text-align: left;
+}
+.game-description span{
+	font-size: 54px;
+	color: #B22222;
+}
+.game-title-container .title-div{
+	position: relative;
+	top: 7px;
+}
+.game-title-container div{
+	display: inline-block;
+}
+.game-title-container img{
+	height: 70px;
+	width: 70px;
+}
+.game-title-container{
+	display: none;
+	/*font*/
+	font-family: 'Alegreya';/*can use different font later*/
+	font-weight: bold;
+	font-size: 50px;
+}
+.play-container{
+	width: 380px;
+	position: relative;
+}
+.monster-container{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.monster-container img{
+	height: 80px;
+	width: 58px;
+}
+.game-right{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+@media screen and (min-width: 1200px){
+.monster-container img{
+	height: 240px;
+	width: 175px;
+}
+.play-container{
+	width: 565px;
+	position: relative;
+}
+.monster-container{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.button-description-contianer{
+	width: 380px;
+	/*font*/
+	font-size: 20px;
+}
+.button-description1{
+	padding: 0px 0px 10px 0px;
+}
+.button-container{
+	position: absolute;
+	top: 105px;
+	right: 43px;
+}
+.button-container button{
+	height: 55px;
+	width: 285px;
+	margin: 0px 0px 15px 0px;
+	font-size: 18px;
+}
+.game-super-container{
+	position: relative;
+	width: 1100px;
+}
+.game-description{
+	font-size: 38px;
+}
+.game-description span{
+	font-size: 58px;
+}
+}
+
+
+@media screen and (max-width: 900px){
+.game-description{
+	display: none;
+}
+.game-right{
+	position: static;
+}
+.game-super-container{
+	position: static;
+	width: auto;
+}
+.monster-container{
+	display: none;
+}
+.game-title-container{
+	display: block;
+}
+.play-container{
+	width: auto;
+	position: static;
+}
+.button-container{
+	position: static;
+	padding: 15px 0px 0px 0px;
+}
+.button-description-contianer{
+	position: static;
+	margin: 10px 0px 0px 0px;
+}
+}
+
+
+@media screen and (max-width: 550px){
+.game-title-container img{
+	height: 55px;
+	width: 55px;
+}
+.game-title-container{
+	font-size: 30px;
+}
+.button-description-contianer{
+	width: 285px;
+	/*font*/
+	font-size: 15px;
+	border: 3px solid #d9d9d9;
+	border-radius: 3px;
+}
+.button-container button{
+	display: block;
+	height: 44px;
+	width: 210px;
+	border-radius: 3px;
+	margin: 0px 0px 10px 0px;
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 16px;
+}
+}
+/*******content inside game section*******/
+
+
+
+/*******content inside introduction section*******/
+.story{
+	font-family: 'Signika';
+	width: 58%;
+	font-size: 22px;
+	color: #e6e6e6;
+	text-align: left;
+}
+@media screen and (max-width: 900px){
+.story{
+	width: 70%;
+	font-size: 18px;
+}	
+}
+@media screen and (max-width: 900px){
+.story{
+	font-size: 20px;
+}
+}
+@media screen and (max-width: 550px){
+.story{
+	width: 90%;
+	font-size: 18px;
+}
+}
+
+.monster-list{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 21px;
+}
+.monster-list li{
+	display: inline-block;
+}
+.monster-list .mo{
+	margin: 15px;
+}
+.monster-list .mo div{
+	background: white;
+	padding: 7px 0px 7px 0px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 255, 255,0.7);
+}
+.monster-list .mo img{
+	width: 132px;
+	height: 190px;
+	background: rgba(182, 52, 54, 1);
+	padding: 12px 25px 20px 25px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 1px 16px 1px rgba(182, 52, 54, 1);
+}
+.intro-subtitle{
+	font-family: 'Signika';
+	font-size: 30px;
+	font-weight: bold;
+	color: #ff8080;
+	padding: 32px 0px 5px 0px;
+}
+@media screen and (max-width: 1200px){
+.monster-list{
+	width: 700px;
+}
+}
+@media screen and (max-width: 900px){
+.monster-list{
+	width: 540px;
+	font-size: 19px;
+}
+.monster-list .mo img{
+	width: 95px;
+	height: 137px;
+	padding: 8px 15px 8px 15px;
+	border-radius: 10px 10px 0px 0px;
+}
+.intro-subtitle{
+	font-size: 25px;
+	padding: 23px 0px 3px 0px;
+}
+.monster-list .mo div{
+	padding: 5px 0px 5px 0px;
+}
+}
+
+@media screen and (max-width: 550px){
+.monster-list{
+	width: 285px;
+	font-size: 17px;
+}
+.monster-list .mo{
+	margin: 10px;
+}
+.intro-subtitle{
+	font-size: 23px;
+	padding: 21px 0px 3px 0px;
+}
+.monster-list .ml{
+	margin: 10px 10px 10px 0px;
+}
+.monster-list .mr{
+	margin: 10px 0px 10px 10px;
+}
+}
+
+.intro-subtitle2{
+	font-family: 'Signika';
+	font-size: 30px;
+	font-weight: bold;
+	color: #ff8080;
+	padding: 30px 0px 5px 0px;
+}
+.tower-list{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 21px;
+}
+.tower-list li{
+	display: inline-block;
+}
+.tower-list .to{
+	margin: 15px;
+}
+.tower-list .to div{
+	background: white;
+	padding: 7px 0px 7px 0px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px 1px 16px 1px rgba(255, 255, 255,0.7);
+}
+.tower-list .to img{
+	width: 132px;
+	height: 132px;
+	background: rgba(182, 52, 54, 1);
+	padding: 20px 25px 20px 25px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 1px 16px 1px rgba(182, 52, 54, 1);
+}
+@media screen and (max-width: 1200px){
+.tower-list{
+	width: 700px;
+}
+}
+@media screen and (max-width: 900px){
+.tower-list{
+	width: 540px;
+	font-size: 19px;
+}
+.tower-list .to img{
+	width: 95px;
+	height: 95px;
+	padding: 12px 15px 12px 15px;
+	border-radius: 10px 10px 0px 0px;
+}
+.intro-subtitle2{
+	font-size: 25px;
+	padding: 23px 0px 3px 0px;
+}
+.tower-list .to div{
+	padding: 5px 0px 5px 0px;
+}
+}
+@media screen and (max-width: 550px){
+.tower-list{
+	width: 285px;
+	font-size: 17px;
+}
+.tower-list .to{
+	margin: 10px;
+}
+.intro-subtitle2{
+	font-size: 23px;
+	padding: 21px 0px 3px 0px;
+}
+.tower-list .tl{
+	margin: 10px 10px 10px 0px;
+}
+.tower-list .tr{
+	margin: 10px 0px 10px 10px;
+}
+}
+/*******content inside introduction section*******/
+
+
+
+/*******content inside contact section*******/
+.member-container{
+	list-style-type: none;
+	height: 160px;
+	width: 800px;
+	margin: 0;
+	padding: 0px 0px 0px 20px;
+	text-align: left;
+}
+.member-container li{
+	width: 185px;
+	display: inline-block;
+	float: left;
+
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 25px;
+}
+.li3{
+	padding: 0px 20px 0px 60px;
+}
+.li4{
+	padding: 0px 20px 30px 60px;
+}
+.team-email{
+	padding: 18px 0px 13px 0px;
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 45px;
+}
+.team-email a{
+	color: #333;
+}
+.team-email .glyphicon{
+	padding: 0px 5px 0px 0px;
+}
+.contact-text{
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 21px;
+	padding: 0px 0px 30px 0px;
+}
+.contact-text2{
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 21px;
+	padding: 25px 0px 0px 0px;
+}
+.team-email .glyphicon{
+	top: 7px;
+}
+@media screen and (max-width: 900px){
+.member-container{
+	height: 230px;
+	width: 470px;
+	padding: 0px 0px 0px 20px;
+}
+.member-container li{
+	font-size: 23px;
+	padding: 0px 20px 20px 30px;
+}
+.contact-text{
+	font-size: 20px;
+	padding: 0px 0px 25px 0px;
+}
+.contact-text2{
+	font-size: 20px;
+	padding: 15px 0px 0px 0px;
+}
+.team-email{
+	padding: 18px 0px 15px 0px;
+	font-size: 35px;
+}
+.team-email .glyphicon{
+	top: 5px;
+}
+}
+
+
+@media screen and (max-width: 550px){
+.member-container{
+	height: 160px;
+	width: 285px;
+	padding: 0px 0px 0px 15px;
+}
+.member-container li{
+	width: 135px;
+	font-size: 17px;
+}
+.member-container .li1{
+	padding: 0px 0px 10px 0px;
+}
+.member-container .li2{
+	padding: 0px 12px 10px 0px;
+}
+.team-email{
+	padding: 15px 0px 5px 0px;
+	font-size: 28px;
+}
+.contact-text{
+	font-size: 15px;
+	padding: 0px 0px 20px 0px;
+}
+.contact-text2{
+	font-size: 15px;
+	padding: 0px 0px 0px 0px;
+}
+.team-email .glyphicon{
+	padding: 0px 2px 0px 0px;
+}
+.team-email .glyphicon{
+	top: 4px;
+}
+}
+/*******content inside contact section*******/
+
+
+/*******content inside footer*******/
+.copyright{
+	padding: 13px 0px 0px 0px;
+	/*font*/
+	font-family: 'Alegreya Sans';/*can use different font later*/
+	font-weight: bold;
+	font-size: 18px;
+
+}
+@media screen and (max-width: 550px){
+.copyright{
+	font-size: 15px;
+	padding: 15px 0px 0px 0px;
+}
+}
+/*******content inside footer******

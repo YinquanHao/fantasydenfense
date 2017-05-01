@@ -1,0 +1,176 @@
+<html>
+<head>
+    <!--favoricon change-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fire Brick Life</title>
+    <!-- add jquery lib change-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--Bootstrap css stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!--all the custom css stylesheets-->
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet-splash.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <!--ADD by liwen-->
+    <!--ADD by liwen-->
+    <script src="/scripts/sidenav.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet-sidenav.css">
+    <!--ADD by liwen-->
+    <!--ADD by liwen-->
+</head>
+
+
+<body>
+<!--ADD by liwen-->
+<!--ADD by liwen-->
+<div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#"> More Games</a>
+
+
+    <script type="text/javascript">
+        <!--
+        var imlocation = "/img/";
+        var linkhead = "http://";
+        var currentdate = 0;
+        var image_number = 0;
+        function ImageArray (n) {
+            this.length = n;
+            for (var i =1; i <= n; i++) {
+                this[i] = ' '
+            }
+        }
+        image = new ImageArray(8);
+        link = new ImageArray(8);
+        image[0] = 'aw.png';
+        image[1] = 'ca.png';
+        image[2]='int.png';
+        image[3] = 'purp.png';
+        image[4] = 'sal.png';
+        image[5] = 'sc.png';
+        image[6] = 'wis.png';
+        image[7]='jet.png';
+
+        link[0]='awesome-life-game.appspot.com';
+        link[1]='canary-life.firebaseapp.com';
+        link[2]='ikb-life.firebaseapp.com';
+        link[3]='purplelifegame.firebaseapp.com';
+        link[4]='salmon-life.firebaseapp.com';
+        link[5]='the-scarlet-life.appspot.com';
+        link[6]='wisteria-life.appspot.com';
+        link[7]='jet-life.firebaseapp.com';
+
+        var rand = 60/image.length;
+        function randomimage() {
+            image_number = Math.floor(Math.random() * 6);
+            return(image_number)
+        }
+        var image1 = image[randomimage()];
+        var link1 = link[image_number];
+        var image2 = image[randomimage()];
+        var link2 = link[image_number];
+        var image3=image[randomimage()];
+        var link3=link[image_number];
+        while(image1===image2){
+            image2=image[randomimage()];
+            var link2 = link[image_number];
+        }
+        while((image3===image2)||(image3===image1)){
+            image3=image[randomimage()];
+            var link3 = link[image_number];
+        }
+
+        document.write("<a href='"+linkhead+link1+"'>");
+        document.write("<img src='" + imlocation + image1+ "'>");
+
+        //-->
+    </script>
+
+    </a>
+
+    <script type="text/javascript">
+        document.write("<a href='"+linkhead+link2+"'>");
+        document.write("<img src='" + imlocation + image2+ "'>");
+    </script>
+    </a>
+    </a>
+
+    <script type="text/javascript">
+        document.write("<a href='"+linkhead+link3+"'>");
+        document.write("<img src='" + imlocation + image3+ "'>");
+    </script>
+    </a>
+
+</div>
+
+<!-- Use any element to open the sidenav -->
+
+<!--ADD by liwen-->
+<!--ADD by liwen-->
+
+<audio id="btn_press">
+    <source src="/sounds/btn_audio.mp3" type="audio/mpeg">
+</audio>
+<audio id="btn_click">
+    <source src="/sounds/btn_click.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="game-title-container">
+    
+<center>
+<div class="title-logo-div"><img src="./img/logo_final.png"><div>Fire Brick Life</div></div>
+<div class="top-title">Game Splash</div>
+<div id="UserName" class="username-div" value="Guest"></div>
+</center>
+</div>
+
+
+
+<div class="center-container">
+    <div class="welcome-container">WELCOME</div>
+    <div class="button-container">
+        <button type="button" onclick="playAudio('btn_click','chapter')"  onmouseover = "playAudio('btn_press','none')">Level Select</button>
+        <button type="button" onclick="playAudio('btn_click','customize')"  onmouseover = "playAudio('btn_press','none')">Customize</button>
+        <button type="button" onclick="playAudio('btn_click','quit')"  onmouseover = "playAudio('btn_press','none')">Quit</button>
+        <!--ADD by liwen-->
+        <!--ADD by liwen-->
+        <button type="button" onclick="openNav()"  onmouseover = "playAudio('btn_press','none')">Show More Games</button>
+        <!--ADD by liwen-->
+        <!--ADD by liwen-->
+    </div>
+</div>
+
+
+<script src="./scripts/main.js"></script>
+<script>
+    initFirebase();
+    updateUserInfo();
+    loadJsonData();
+    var name = window.sessionStorage.getItem("UserName");
+    document.getElementById("UserName").innerHTML=name;
+</script>
+</body>
+</html>

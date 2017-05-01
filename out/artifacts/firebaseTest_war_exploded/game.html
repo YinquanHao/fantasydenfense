@@ -1,0 +1,73 @@
+<html>
+<head>
+    <!--favoricon change-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fire Brick Life</title>
+    <!--Bootstrap css stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!--all the custom css stylesheets-->
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet-splash.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        initFirebase();
+        updateUserInfo();
+        readShareLevel();
+    </script>
+</head>
+
+
+<body>
+<audio id="btn_press">
+    <source src="/sounds/btn_audio.mp3" type="audio/mpeg">
+</audio>
+<audio id="btn_click">
+    <source src="/sounds/btn_click.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="game-title-container">
+    <div class="title-logo-div"><img src="./img/logo_final.png"><div>Fire Brick Life</div></div>
+</div>
+
+<div id="UserName" class="username-div" value="Guest"></div>
+
+<div class="center-container">
+    <div class="welcome-container">WELCOME</div>
+    <div class="button-container">
+        <button type="button" onclick="playAudio('btn_click','chapter')"  onmouseover = "playAudio('btn_press','none')">Chapter</button>
+        <button type="button" onclick="playAudio('btn_click','customize')"  onmouseover = "playAudio('btn_press','none')">Customize</button>
+        <button type="button" onclick="playAudio('btn_click','quit')"  onmouseover = "playAudio('btn_press','none')">Quit</button>
+    </div>
+</div>
+
+
+<script src="./scripts/main.js"></script>
+<script>
+    var name = window.sessionStorage.getItem("UserName");
+    document.getElementById("UserName").innerHTML=name;
+</script>
+</body>
+</html>

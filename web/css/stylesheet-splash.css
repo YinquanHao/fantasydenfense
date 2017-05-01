@@ -1,0 +1,249 @@
+/*******overwrite boostrap for body*******/
+body{
+	line-height:normal;
+}
+*{
+	box-sizing: content-box;
+}
+.btn{
+	outline: none !important;
+}
+.btn:focus{
+	outline: none !important;
+}
+.btn:active{
+	outline: none !important;
+}
+button{
+	outline: none !important;
+}
+button:focus{
+	outline: none !important;
+}
+button:active{
+	outline: none !important;
+}
+.glyphicon{
+	top: 2px;
+}
+/*******overwrite boostrap for body*******/
+
+
+
+/*******all the containers*******/
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+
+	background: url(../img/bg_black.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+/*******all the containers*******/
+
+
+/*******center container*******/
+.center-container{
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px 25px 15px 25px;
+	box-shadow: 0px 0px 12px 2px rgba(67, 80, 86, 0.9);
+	border-radius: 5px;
+	display: inline-block;
+	background: rgba(67, 80, 86, 0.9);
+}
+.welcome-container{
+	text-align: center;
+	color: white;
+	/*font*/
+	font-family: 'Roboto';/*can use different font later*/
+	font-weight: bold;
+	font-size: 30px;
+}
+.button-container button{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 53px;
+	width: 290px;
+	margin: 10px 10px 10px 10px;
+	display: block;
+	border-radius: 0px 0px 0px 0px;
+	background: #cd4c4e;
+	color: white;
+	/*font*/
+	font-family: 'Roboto';/*can use different font later*/
+	font-weight: bold;
+	font-size: 21px;
+}
+.button-container button:hover{
+	background: #B63436;
+}
+@media screen and (max-width: 900px){
+.center-container{
+	top: 57%;
+	padding: 10px 20px 10px 20px;
+}
+.welcome-container{
+	font-size: 25px;
+}
+.button-container button{
+	height: 43px;
+	width: 250px;
+	margin: 7px 7px 7px 7px;
+	font-size: 18px;
+}
+}
+@media screen and (max-width: 900px){
+.center-container{
+	padding: 13px 23px 13px 23px;
+}
+.welcome-container{
+	font-size: 22px;
+}
+.button-container button{
+	height: 43px;
+	width: 250px;
+	margin: 7px 7px 7px 7px;
+	font-size: 18px;
+}
+}
+@media screen and (max-width: 550px){
+.center-container{
+	padding: 10px 20px 10px 20px;
+}
+.welcome-container{
+	font-size: 20px;
+}
+.button-container button{
+	height: 33px;
+	width: 200px;
+	margin: 7px 7px 7px 7px;
+	font-size: 15px;
+}
+}
+/*******center container*******/
+
+
+/*******left container*******/
+.game-title-container .title-logo-div{
+	color: white;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}
+.game-title-container{
+	background: rgba(67, 80, 86, 0.7);
+	box-shadow: 0px 0px 12px 2px rgba(67, 80, 86, 0.7);
+	/*font*/
+	font-family: 'Alegreya';/*can use different font later*/
+	font-weight: bold;
+	font-size: 33px;
+}
+.game-title-container img{
+	height: 60px;
+	width: 60px;
+	padding-right: 7px;
+}
+.title-logo-div div{
+	display: inline-block;
+	position: relative;
+	top: 7px;
+}
+@media screen and (max-width: 900px){
+.game-title-container .title-logo-div{
+	top: 5px;
+	left: 5px;
+}
+.game-title-container{
+	font-size: 25px;
+}
+.game-title-container img{
+	height: 40px;
+	width: 40px;
+	padding-right: 5px;
+}
+.title-logo-div div{
+	top: 5px;
+}
+}
+@media screen and (max-width: 550px){
+.game-title-container .title-logo-div{
+	top: 3px;
+	left: 3px;
+}
+.game-title-container{
+	font-size: 15px;
+}
+.game-title-container img{
+	height: 35px;
+	width: 35px;
+	padding-right: 5px;
+}
+.title-logo-div div{
+	top: 5px;
+}
+}
+/*******left container*******/
+
+
+/*******right container*******/
+.username-div{
+	color: white;
+	position: fixed;
+	top: 15px;
+	right: 7px;
+	background: rgba(67, 80, 86, 1);
+	box-shadow: 0px 0px 12px 2px rgba(67, 80, 86, 1);
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	/*font*/
+	font-family: 'Roboto';/*can use different font later*/
+	font-weight: bold;
+	font-size: 23px;
+}
+.top-title{
+	color: white;
+	position: relative;
+	top: 0px;
+	
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	/*font*/
+	font-family: 'Roboto';/*can use different font later*/
+	font-weight: bold;
+	font-size: 50px;
+}
+@media screen and (max-width: 900px){
+.username-div{
+	top: 7px;
+	right: 5px;
+	padding: 7px 17px 7px 17px;
+	font-size: 21px;
+}
+.top-title{
+	font-size: 30px;
+}
+}
+@media screen and (max-width: 550px){
+.username-div{
+	top: 7px;
+	right: 3px;
+	padding: 5px 15px 5px 15px;
+	font-size: 19px;
+}
+.top-title{
+	font-size: 21px;
+}
+}
+/*******right container*******/

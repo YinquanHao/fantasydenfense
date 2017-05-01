@@ -1,0 +1,319 @@
+/*******overwrite boostrap for body*******/
+body{
+    line-height:normal;
+}
+*{
+    box-sizing: content-box;
+}
+/*******overwrite boostrap for body*******/
+
+
+
+/*******all the containers*******/
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.home-container{
+    background: pink;/*!!!!!!!!change to #cccccc later!!!!!!!!!!!!!!!!!!!*/
+    min-height: 100%;
+}
+section{
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+}
+.section-space{
+    height: 55px;/*!!!!!!!!!!!!!!!!change it if the height of nav is changed*/
+}
+.section-game{
+    background: #cccccc;
+}
+.section-introduction{
+    background: #ff9933;
+}
+.section-contact{
+    background: #cccccc;
+    padding: 100px 0px 150px 0px;/*for copyright footer stay in buttom*/
+    /*50+50*/
+}
+footer{
+    width: 100%;
+    height: 50px;/*for copyright footer stay in buttom*/
+    background: red;/*!!!!!!!!change to #cccccc later!!!!!!!!!!!!!!!!!!!*/
+    margin-top: -50px;/*for copyright footer stay in buttom*/
+    position: relative;
+}
+.section-name{
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 38px;
+    position: relative;
+    top: -50px;
+}
+/*******all the containers*******/
+
+
+
+/*******top navigation bar*******/
+/*entire top nav*/
+.navbar{
+    text-align: center;
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    background: #0e2a3e;
+    border: 0px;
+    -webkit-box-shadow: 0px 2px 14px 2px #0e2a3e;
+    -moz-box-shadow: 0px 2px 14px 2px #0e2a3e;
+    box-shadow: 0px 2px 14px 2px #0e2a3e;
+}
+
+
+/*logo + game name*/
+.navbar-header{
+    position: absolute;
+    width: 100%;
+}
+.navbar-header a{
+    height: 55px;
+    line-height: 55px;
+    padding: 0px;
+    margin: 0px;
+
+    /*font*/
+    font-family: 'Alegreya';/*can use different font later*/
+    font-weight: bold;
+    font-size: 25px;
+}
+.navbar .navbar-header>a{
+    color: white;
+}
+.navbar .navbar-header>a:hover{
+    color: white;
+}
+.navbar .navbar-header>a:focus{
+    color: white;
+}
+
+/*center part of the top nav*/
+.navbar-nav{
+    display: inline-block;
+    float: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*li and a of the center part of the top nav*/
+.navbar-nav li{
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    background: #0e2a3e;
+}
+.empty-li{
+    width: 0px;
+    overflow: hidden;
+}
+.navbar-nav .empty-li a{
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    background: #0e2a3e;
+
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 18px;
+}
+.navbar-nav .nonempty-li a{
+    width: 180px;
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 55px;
+    background: #0e2a3e;
+
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 18px;
+}
+.navbar .navbar-nav li>a{
+    color: white;
+}
+.navbar .navbar-nav li>a:hover{
+    color: white;
+    background: #1c557d;
+}
+.navbar .navbar-nav li>a:focus{
+    color: white;
+}
+.navbar .navbar-nav>.active>a{
+    color: white;
+    background: #1c557d;
+}
+.navbar .navbar-nav>.active>a:hover{
+    color: white;
+    background: #1c557d;
+}
+.navbar .navbar-nav>.active>a:focus{
+    color: white;
+    background: #1c557d;
+}
+
+
+/*responsive for top nav*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!need to add one media query for mobile!!!!!!!!!!!*/
+@media screen and (max-width: 1000px){
+    .navbar-nav .nonempty-li a{
+        width: 120px;
+    }
+}
+@media screen and (max-width: 767px){
+    .navbar-nav .nonempty-li a{
+        width: 100%;
+    }
+    .navbar-nav .nonempty-li{
+        width: 100%;
+    }
+    .navbar-nav{
+        width: 100%;
+        -webkit-box-shadow: 0px 2px 14px 2px #0e2a3e;
+        -moz-box-shadow: 0px 2px 14px 2px #0e2a3e;
+        box-shadow: 0px 2px 14px 2px #0e2a3e;
+    }
+}
+/*******top navigation bar*******/
+
+
+
+/*******content inside game section*******/
+
+.btn-success{
+    height: 45px;
+    width: 200px;
+    border-radius: 3px;
+
+    box-shadow: 3px 3px 19px -2px grey;
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 18px;
+}
+.glyphicon{
+    padding: 0px 10px 0px 0px;
+}
+.button-description1{
+    padding: 0px 0px 10px 0px;
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 18px;
+}
+.button-description2{
+    padding: 10px 0px 10px 0px;
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 20px;
+}
+.button-container{
+    padding: 50px 50px 50px 50px;
+    background: grey;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 3px 3px 19px -2px grey;
+}
+.button-container button{
+    display: block;
+}
+.game-container{
+    width: 90%;
+}
+.game-left{
+    width: 49%;
+    display: inline-block;
+}
+.game-right{
+    width: 49%;
+    display: inline-block;
+}
+/*******content inside game section*******/
+
+
+
+
+
+/*******content inside introduction section*******/
+.screenshot-container{
+    width: 90%;
+}
+.screenshot-description{
+    width: 80%;
+    height: 200px;
+    background: white;
+    display: inline-block;
+}
+.screenshot-child-container{
+    width: 100%;
+}
+.screenshot{
+    width: 49%;
+    height: 100px;
+    background: white;
+    display: inline-block;
+}
+@media screen and (max-width: 1000px){
+    .screenshot-description{
+        width: 100%;
+    }
+    .screenshot{
+        width: 100%;
+    }
+}
+/*******content inside introduction section*******/
+
+
+
+/*******content inside contact section*******/
+.person-container{
+    width: 90%;
+}
+.person{
+    height: 100px;
+    width: 33%;
+
+    display: inline-block;
+
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px){
+    .person{
+        width: 49%;
+    }
+}
+/*******content inside contact section*******/
+
+
+
+/*******content inside footer*******/
+.copyright{
+    /*font*/
+    font-family: 'Alegreya Sans';/*can use different font later*/
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 0px 0px 0px;
+}
+/*******content inside footer*******/

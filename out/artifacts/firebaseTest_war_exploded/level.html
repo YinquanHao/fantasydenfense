@@ -1,0 +1,137 @@
+<html>
+<head>
+    <!--favoricon change-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Fire Brick Life</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap css stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!--all the custom css stylesheets-->
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet-level.css">
+</head>
+<body>
+<audio id="btn_press">
+    <source src="/sounds/btn_audio.mp3" type="audio/mpeg">
+</audio>
+<audio id="btn_click">
+    <source src="/sounds/btn_click.mp3" type="audio/mpeg">
+</audio>
+<input id="currentLevel" value="0" hidden/>
+<div id="game-side-bar">
+    <section class="sidebar-super-container">
+
+        <section class="top-status-container">
+            <center>
+                <table class="top-status">
+                    <tr>
+                        <td>Money</td>
+                        <td>Enemies</td>
+                    </tr>
+                    <tr class="larger-text-tr">
+                        <td id="money-text">$0</td>
+                        <td id="remaining-monsters-text">0</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td><button type="button" id="control-game-button1" class="control-game-button" data-toggle="tooltip" data-placement="bottom" title="Pause/Continue"><span id="game-control-span1" class="glyphicon glyphicon-pause"></span><span id="game-control-span2"></span></button></td>
+                        <td><button type="button" id="control-game-button2" class="control-game-button" data-toggle="tooltip" data-placement="bottom" title="Chapter"><span class="glyphicon glyphicon-log-out"></span></button></td>
+                    </tr>
+                </table>
+
+                <!-- <button type="button" id="control-game-button3" class="btn control-game-button" data-toggle="tooltip" data-placement="bottom" title="Mute"><span class="glyphicon glyphicon-volume-up"></span></button> -->
+            </center>
+        </section>
+
+
+        <section class="tower-status-container">
+            <table class="tower-table">
+                <tr>
+                    <td>Name: </td>
+                    <td id="tower-name-text"></td>
+                </tr>
+                <tr>
+                    <td>HP: </td>
+                    <td id="tower-hp-text"></td>
+                </tr>
+                <tr>
+                    <td>Attack: </td>
+                    <td id="tower-attack-text"></td>
+                </tr>
+                <tr>
+                    <td>Effect: </td>
+                    <td id="tower-effect-text"></td>
+                </tr>
+            </table>
+        </section>
+
+        <center>
+            <ul class="tower-button-list">
+                <li>
+                    <button id="eye-tower-button" type="button" class="btn"><img src="./img/eye_tower.png"><div>$100</div></button>
+                </li>
+                <li>
+                    <button id="fan-tower-button" type="button" class="btn"><img src="./img/fan_tower.png"><div>$200</div></button>
+                </li>
+                <li>
+                    <button id="gear-tower-button" type="button" class="btn"><img src="./img/gear_tower.png"><div>$120</div></button>
+                </li>
+                <li>
+                    <button id="java-tower-button" type="button" class="btn"><img src="./img/java_tower.png"><div>$80</div></button>
+                </li>
+                <li>
+                    <button id="xueyou-tower-button" type="button" class="btn"><img src="./img/xueyou_tower.png"><div>$150</div></button>
+                </li>
+            </ul>
+        </center>
+
+
+    </section>
+</div>
+
+
+<div id="level-button-container">
+    <button type="button" onclick="playAudio('btn_click','game')"  onmouseover = "playAudio('btn_press')">Back To Start</button>
+</div>
+
+<!--jQuery and Bootstrap scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--game scripts-->
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script src="./scripts/main.js"></script>
+<script>
+    initFirebase();
+    UpdateUserLevel();
+</script>
+<script src="scripts/phaser.min.js"></script>
+<script src="scripts/phaser-state-transition.js"></script>
+<script src="scripts/easystar-0.3.1.min.js"></script>
+<script src = "scripts/script-level.js"></script>
+<script src = "scripts/game.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,821 @@
+/*******overwrite boostrap for body*******/
+body{
+    line-height:normal;
+}
+*{
+    box-sizing: content-box;
+}
+.btn{
+    outline: none !important;
+}
+.btn:focus{
+    outline: none !important;
+}
+.btn:active{
+    outline: none !important;
+}
+button{
+    outline: none !important;
+}
+button:focus{
+    outline: none !important;
+}
+button:active{
+    outline: none !important;
+}
+.glyphicon{
+    top: 2px;
+}
+/*******overwrite boostrap for body*******/
+
+
+
+/*******all the containers*******/
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    background: url(../img/bg_base.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+/*******all the containers*******/
+
+
+
+
+/*******game side bar*******/
+#game-side-bar{
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-super-container{
+    padding-top: 15px;
+    background: rgba(67, 80, 86, 0.9);/*#4e5d65*/
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 12px 2px rgba(67, 80, 86, 0.9);
+}
+.top-status-container{
+    color: white;
+}
+@media screen and (max-width: 1200px){
+.sidebar-super-container{
+    padding-top: 10px;
+}
+}
+@media screen and (max-width: 1200px){
+.sidebar-super-container{
+    padding-top: 5px;
+}
+}
+
+
+
+
+.top-status-container .control-customize-button{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #B63436;
+    background-color: transparent;
+    color: white;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 37px;
+    height: 65px;
+    width: 65px;
+    border-radius: 65px;
+}
+.all-custom-button{
+    display: block;
+    width: 165px;
+    margin: 10px 0px 3px 0px;
+    padding: 0;
+    border: 0;
+    background: #B63436;
+    padding: 10px 10px 10px 10px;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 19px;
+}
+.select-monsters-button{
+    margin: 4px 0px 0px 0px;
+}
+.top-status-container button:hover{
+    color: #7e909a;
+}
+button.all-custom-button:hover{
+    color: white;
+}
+@media screen and (max-width: 1200px){
+.top-status-container .control-customize-button{
+    background: #B63436;
+    background-color: transparent;
+    font-size: 28px;
+    height: 55px;
+    width: 55px;
+    border-radius: 55px;
+}
+.all-custom-button{
+    width: 120px;
+    margin: 8px 0px 0px 0px;
+    padding: 8px 8px 8px 8px;
+    font-size: 14px;
+}
+.select-monsters-button{
+    margin: 4px 0px 0px 0px;
+}
+}
+@media screen and (max-width: 900px){
+.top-status-container .control-customize-button{
+    background: #B63436;
+    background-color: transparent;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+.all-custom-button{
+    width: 95px;
+    margin: 5px 0px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    font-size: 10px;
+}
+.select-monsters-button{
+    margin: 3px 0px 0px 0px;
+}
+}
+
+
+
+
+.map-button-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 195px;
+    padding: 0px 15px 0px 15px;
+}
+.map-button-list li{
+    display: inline-block;
+    padding: 5px 5px 10px 5px;
+}
+.map-button-list img{
+    width: 55px;
+    height: 55px;
+    padding: 10px 15px 10px 15px;
+    background: rgba(178, 34, 34, 0.9);
+    /*box-shadow: -2px 0px 15px 0px rgba(178, 34, 34, 0.9);*/
+    border-radius: 0px 0px 0px 0px;/*8px 0px 0px 8px*/
+}
+.map-button-list button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0px 0px 0px 0px;
+    background: #e2e6e9;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-size: 18px;
+    font-weight: bold;
+}
+.map-button-list div{
+    padding: 0px 0px 0px 0px;
+}
+.map-button-list button:hover{
+    background: #7e909a;
+    color: white;
+}
+
+
+@media screen and (max-width: 1200px){
+.map-button-list li{
+    padding: 2px 2px 5px 2px;
+}
+.map-button-list{
+    width: 150px;
+    padding: 0px 0px 0px 0px;
+}
+.map-button-list img{
+    width: 40px;
+    height: 40px;
+    padding: 7px 12px 7px 12px;
+    background: rgba(178, 34, 34, 0.9);
+    border-radius: 0px 0px 0px 0px;/*8px 0px 0px 8px*/
+}
+.map-button-list button{
+    font-size: 16px;
+}
+.map-button-list div{
+    padding: 0px 0px 0px 0px;
+}
+}
+
+
+
+@media screen and (max-width: 900px){
+.map-button-list li{
+    padding: 2px 1px 3px 1px;
+}
+.map-button-list{
+    width: 115px;
+    padding: 0px 5px 0px 5px;
+}
+.map-button-list img{
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px 5px 10px;
+    background: rgba(178, 34, 34, 0.9);
+    border-radius: 0px 0px 0px 0px;/*8px 0px 0px 8px*/
+}
+.map-button-list button{
+    font-size: 12px;
+}
+.map-button-list div{
+    padding: 0px 0px 0px 0px;
+}
+}
+
+
+
+.glyphicon{
+    padding: 0px;
+}
+
+
+.tooltip-inner{
+    padding: 10px;
+    font-size: 20px;
+}
+@media screen and (max-width: 1200px){
+.tooltip-inner{
+    padding: 7px;
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 900px){
+.tooltip-inner{
+    padding: 5px;
+    font-size: 12px;
+}
+}
+/*******game side bar*******/
+
+
+
+/*******money*******/
+.money-container table{
+    color: white;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 26px;
+}
+.money-text-conatiner{
+    width: 80px;
+}
+.money-container .money-control-button{
+    display: inline-block;
+    margin: 0;
+    padding: 5;
+    border: 0;
+    background: #B63436;
+    
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 17px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+.money-container button:hover{
+    color: #7e909a;
+}
+@media screen and (max-width: 1200px){
+.money-container table{
+    font-size: 20px;
+}
+.money-text-conatiner{
+    width: 55px;
+}
+.money-container .money-control-button{
+    padding: 1;
+    font-size: 13px;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+}
+}
+@media screen and (max-width: 900px){
+.money-container table{
+    font-size: 15px;
+}
+.money-text-conatiner{
+    width: 40px;
+}
+.money-container .money-control-button{
+    padding: 1;
+    font-size: 8px;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+}
+}
+/*******money*******/
+
+
+
+
+/*******monster*******/
+.select-monsters-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.monsters-list-container{
+    position: relative;
+    width: 480px;
+    height: 300px;
+}
+.monster-button-container{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.monster-button-container td{
+    padding: 5px;
+}
+.monster-button-container img{
+    width: 65px;
+    height: 95px;
+    padding: 7px 15px 10px 15px;
+    background: rgba(178, 34, 34, 0.9);
+    /*box-shadow: -2px 0px 15px 0px rgba(178, 34, 34, 0.9);*/
+    border-radius: 0px 0px 0px 0px;/*8px 0px 0px 8px*/
+}
+.monster-button-container button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0px 0px 0px 0px;
+    background: #e2e6e9;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-size: 17px;
+    font-weight: bold;
+}
+.monster-button-container button:hover{
+    background: #7e909a;
+    color: white;
+}
+@media screen and (max-width: 1200px){
+.monsters-list-container{
+    width: 430px;
+    height: 260px;
+}
+.monster-button-container img{
+    width: 55px;
+    height: 80px;
+    padding: 5px 15px 10px 15px;
+    background: rgba(178, 34, 34, 0.9);
+    /*box-shadow: -2px 0px 15px 0px rgba(178, 34, 34, 0.9);*/
+    border-radius: 0px 0px 0px 0px;/*8px 0px 0px 8px*/
+}
+.monster-button-container button{
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 900px){
+.monsters-list-container{
+    width: 360px;
+    height: 220px;
+}
+.monster-button-container img{
+    width: 49px;
+    height: 72px;
+    padding: 3px 10px 8px 10px;
+    background: rgba(178, 34, 34, 0.9);
+    /*box-shadow: -2px 0px 15px 0px rgba(178, 34, 34, 0.9);*/
+    border-radius: 0px 0px 0px 0px;/*8px 0px 0px 8px*/
+}
+.monster-button-container button{
+    font-size: 13px;
+}
+}
+
+
+
+.selected-monster-list{
+    color: white;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-size: 18px;
+    font-weight: bold;
+
+    height: 270px;
+    overflow-y: scroll;
+
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.selected-monster-list table{
+    color: white;
+}
+.selected-monster-list button{
+    display: inline-block;
+    margin: 0;
+    padding: 5;
+    border: 0;
+    background: #B63436;
+    
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 15px;
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+}
+.selected-monster-list td{
+    padding: 2px 0px 2px 0px;
+}
+.selected-monster-list td.monster-name{
+    width: 70px;
+}
+.selected-monster-list td.delete-monster{
+    padding-left: 10px;
+    padding-right: 15px;
+}
+@media screen and (max-width: 1200px){
+.selected-monster-list{
+    font-size: 15px;
+    height: 240px;
+    top: 5px;
+}
+.selected-monster-list button{
+    font-size: 13px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+}
+.selected-monster-list td.delete-monster{
+    padding-left: 0px;
+    padding-right: 15px;
+}
+.selected-monster-list td.monster-name{
+    width: 65px;
+}
+}
+@media screen and (max-width: 900px){
+.selected-monster-list{
+    font-size: 14px;
+    height: 210px;
+    top: 3px;
+}
+.selected-monster-list button{
+    font-size: 11px;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+}
+.selected-monster-list td.delete-monster{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.selected-monster-list td.monster-name{
+    width: 60px;
+}
+}
+
+
+
+
+.selected-monster-list::-webkit-scrollbar{
+    width: 12px;
+}
+.selected-monster-list::-webkit-scrollbar-thumb{
+    border-radius: 17px;
+    background-color: rgba(178, 34, 34, 0.9);
+}
+@media screen and (max-width: 900px){
+.selected-monster-list::-webkit-scrollbar{
+    width: 10px;
+}
+}
+
+.monsters-list-text{
+    color: white;
+    padding-bottom: 10px;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 25px;
+}
+@media screen and (max-width: 1200px){
+.monsters-list-text{
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 900px){
+.monsters-list-text{
+    display: none;
+}
+}
+
+
+.close-select-monster-container{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.close-select-monster-container button{
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #B63436;
+    background-color: transparent;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 45px;
+    height: 65px;
+    width: 65px;
+    border-radius: 65px;
+}
+.close-select-monster-container button:hover{
+    color: #7e909a;
+}
+@media screen and (max-width: 1200px){
+.close-select-monster-container{
+    top: 8px;
+    right: 8px;
+}
+.close-select-monster-container button{
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+}
+@media screen and (max-width: 900px){
+.close-select-monster-container{
+    top: 5px;
+    right: 5px;
+}
+.close-select-monster-container button{
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+}
+
+/*******monster*******/
+
+/*******save*******/
+.save-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.save-container div{
+    color: white;
+/*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.save-container input{
+    width: 230px;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.save-container button{
+    color: white;
+    display: block;
+    width: 165px;
+    margin: 10px 0px 3px 0px;
+    padding: 0;
+    border: 0;
+    background: #B63436;
+    padding: 10px 10px 10px 10px;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 19px;
+}
+@media screen and (max-width: 1200px){
+.save-container div{
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+.save-container input{
+    width: 200px;
+    height: 25px;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.save-container button{
+    width: 135px;
+    margin: 10px 0px 3px 0px;
+    background: #B63436;
+    padding: 10px 10px 10px 10px;
+    font-size: 19px;
+}
+}
+@media screen and (max-width: 900px){
+.save-container div{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.save-container input{
+    width: 170px;
+    height: 20px;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.save-container button{
+    width: 100px;
+    margin: 10px 0px 3px 0px;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+}
+}
+/*******save*******/
+
+
+/*******load*******/
+.load-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.history-text{
+    color: white;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1200px){
+.history-text{
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 900px){
+.history-text{
+    font-size: 15px;
+}
+}
+
+.custom-level-table-container{
+    color: white;
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-size: 18px;
+    font-weight: bold;
+
+    height: 270px;
+    overflow-y: scroll;
+    display: inline-block;
+}
+@media screen and (max-width: 1200px){
+.custom-level-table-container{
+    font-size: 15px;
+    height: 240px;
+}
+}
+@media screen and (max-width: 900px){
+.custom-level-table-container{
+    font-size: 13px;
+    height: 160px;
+}
+}
+
+
+
+
+
+.history-container{
+    position: relative;
+    height: 300px;
+    width: 500px;
+}
+@media screen and (max-width: 1200px){
+.history-container{
+    height: 270px;
+    width: 400px;
+}
+}
+@media screen and (max-width: 900px){
+.history-container{
+    height: 200px;
+    width: 300px;
+}
+}
+.custom-level-table-container  td.load-td2{
+    padding: 5px 15px 5px 0px;
+}
+.custom-level-table-container  td.load-td1{
+    color: white;
+    width: 53px;
+    padding: 5px 5px 5px 15px;
+}
+.custom-level-table-container button{
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    background: #B63436;
+    
+    /*font*/
+    font-family: 'Roboto';/*can use different font later*/
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 28px;
+}
+@media screen and (max-width: 1200px){
+.custom-level-table-container  td.load-td2{
+    padding: 5px 15px 5px 0px;
+}
+.custom-level-table-container  td.load-td1{
+    width: 40px;
+    padding: 5px 5px 5px 15px;
+}
+.custom-level-table-container button{
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 28px;
+}
+}
+@media screen and (max-width: 900px){
+.custom-level-table-container  td.load-td2{
+    padding: 3px 10px 3px 0px;
+}
+.custom-level-table-container  td.load-td1{
+    width: 40px;
+    padding: 3px 3px 3px 10px;
+}
+.custom-level-table-container button{
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 28px;
+}
+}
+
+
+
+
+
+
+
+
+.custom-level-table-container::-webkit-scrollbar{
+    width: 12px;
+}
+.custom-level-table-container::-webkit-scrollbar-thumb{
+    border-radius: 17px;
+    background-color: rgba(178, 34, 34, 0.9);
+}
+@media screen and (max-width: 900px){
+.custom-level-table-container::-webkit-scrollbar{
+    width: 10px;
+}
+}
+/*******load*******/
